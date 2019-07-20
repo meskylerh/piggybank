@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <script src="template.js"></script>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Personal Loan</title>
+</head>
+<body>
+<div class="container">
+  <div class="jumbotron">
+    <h1>Piggy Bank</h1> 
+    <p>The one stop place for all of your loan needs. We know customers are our greatest asset.</p> 
+  </div>
+</div>
+	<h1>Select Loan type</h1>
+	<form action="/rate" method="get">
+   <div class="container-fluid">
+	<div class="row  justify-content-md-center" > 
+	<div class="col-12 col-md-6">
+   <div class="card p-3">
+   <label>Loan amount request:</label>
+     <input class="form-control" name="amount" type="number" min="750" required ></input>
+     <label>Collateral?</label>
+    			<div class="form-group">
+				<button class="btn btn-secondary mb-3" type="button" onclick="addItem()">Add Vehicle</button>
+				 <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+            </div>
+			</div>
+		<input class="btn btn-success btn-block" type="submit" value="Submit"/>
+  	</div>
+	</div>
+</div>
+</div>
+	</form>
+      <script>
+      
+      
+      </script>
+</body>
+</html>
+
+
+

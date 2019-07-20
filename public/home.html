@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="page">
+			<div id="header">
+				Piggy Bank
+				<a href="javascript:void(0)" id="user-menu">≡</a>
+				<ul id="user-menu-content">
+					<li onclick="window.location.href='/'">Log Out</li>
+				</ul>
+			</div>
+		<div id="page-content">
+			<ul id="navbar">
+				<li class="active" onclick="goToPage(this, 'welcome.html')">Home</li>
+				<li onclick="goToPage(this, 'loan.html')">Request Loan</li>
+				<li onclick="goToPage(this, 'forms')">My Forms</li>
+			</ul>
+			<iframe id="content-frame" src="welcome.html"></iframe>
+		</div>
+	</div>
+	<script>
+	function goToPage(element, page){
+		if (element.className == 'active'){
+			return;
+		}
+		document.querySelector('#navbar .active').classList.remove('active');
+		element.classList.add('active');
+		document.getElementById("content-frame").contentWindow.location.href=page;
+	}
+	</script>
+</body>
+</html>
